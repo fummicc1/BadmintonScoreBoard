@@ -50,11 +50,17 @@ class ViewController: UIViewController {
             
             showLeftAlert()
             
+            leftGameScore += 1
+            leftGameButton.setTitle(String(leftGameScore), for: .normal)
+            
         } else if rightPointScore == 21, leftPointScore <= 19 {
             
             print("右側の選手が勝利です。")
             
             showRightAlert()
+            
+            rightGameScore += 1
+            rightGameButton.setTitle(String(rightGameScore), for: .normal)
             
         }
         
@@ -64,11 +70,17 @@ class ViewController: UIViewController {
             
             showLeftAlert()
             
+            leftGameScore += 1
+            leftGameButton.setTitle(String(leftGameScore), for: .normal)
+            
         } else if rightPointScore > 21, leftPointScore >= 20, rightPointScore - leftPointScore >= 2 {
             
             print("デュース。右側の選手が勝利です。")
             
             showRightAlert()
+            
+            rightGameScore += 1
+            rightGameButton.setTitle(String(rightGameScore), for: .normal)
             
         }
     }

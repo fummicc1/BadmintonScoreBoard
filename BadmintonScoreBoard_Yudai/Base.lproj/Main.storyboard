@@ -57,7 +57,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="leftGameButton" destination="EpM-Yp-Jaf" id="ckT-g1-aTj"/>
                         <outlet property="leftScoreButton" destination="dVm-Eo-BJd" id="38e-aI-AMc"/>
+                        <outlet property="rightGameButton" destination="uBG-8q-2Rh" id="NyD-JY-Txh"/>
                         <outlet property="rightScoreButton" destination="7pa-1H-2mS" id="Txy-Vf-3Kz"/>
                     </connections>
                 </viewController>
